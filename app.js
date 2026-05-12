@@ -759,7 +759,7 @@ const Components = {
           <div class="card-title">${exercise.title}</div>
           <div class="card-text">Select an intention to visualize:</div>
           <div style="margin: 12px 0; text-align: left;">
-            <select class="input-field" style="width: 100%; padding: 11px 12px;" onchange="Actions.selectIntention(this.value); UI.render();">
+            <select class="input-field" style="width: 100%; padding: 11px 12px;" onchange="Actions.selectIntention(this.value)">
               <option value="">Choose an intention...</option>
               ${intentions.map((i, idx) => `<option value="${idx}" ${setup.selectedIntention === idx ? 'selected' : ''}>${i.title}</option>`).join('')}
             </select>
@@ -1649,7 +1649,7 @@ const Actions = {
   },
 
   selectIntention: (value) => {
-    State.exerciseSetup.generativeVisualization.selectedIntention = value ? parseInt(value) : null;
+    State.exerciseSetup.generativeVisualization.selectedIntention = value !== '' ? parseInt(value) : null;
     UI.render();
   },
 
