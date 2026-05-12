@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Karen Ashimyan">
   <meta name="description" content="For GIT 480 final project, but also a project I am actually passionate about continuing to build further!">
-  <title>remind</title>
+  <title>AllBeAm</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div id="app" class="app">
     <div class="main-container">
+      <div class="subtabs-container" id="subtabsContainer">
+        <div class="subtabs-row" id="subtabsRow"></div>
+      </div>
+
+      <div class="content-area" id="contentArea"></div>
+
       <div class="tabs-container">
         <div class="main-tabs">
           <button class="main-tab active" data-tab="plan">PLAN</button>
@@ -22,12 +28,6 @@
           <button class="settings-btn" id="themeBtn">⚙</button>
         </div>
       </div>
-
-      <div class="subtabs-container" id="subtabsContainer">
-        <div class="subtabs-row" id="subtabsRow"></div>
-      </div>
-
-      <div class="content-area" id="contentArea"></div>
     </div>
 
     <div class="modal hidden" id="themeModal">
