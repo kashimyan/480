@@ -635,6 +635,7 @@ body.light-theme .gratitude-chip {
 }
 
 .mood-slider {
+  -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 32px;
